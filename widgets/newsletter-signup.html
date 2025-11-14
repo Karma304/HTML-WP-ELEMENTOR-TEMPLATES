@@ -1,0 +1,160 @@
+<!-- Newsletter Signup Widget for SaaS Website -->
+<section class="newsletter-section" aria-labelledby="newsletter-heading">
+  <div class="container">
+    <div class="newsletter-card">
+      <div class="newsletter-content">
+        <h2 id="newsletter-heading" class="newsletter-title">Stay in the Loop</h2>
+        <p class="newsletter-description">
+          Get the latest product updates, tips, and exclusive offers delivered to your inbox.
+        </p>
+      </div>
+      
+      <form class="newsletter-form" action="/subscribe" method="POST">
+        <div class="form-wrapper">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input 
+            type="email" 
+            id="newsletter-email" 
+            name="email" 
+            class="email-input" 
+            placeholder="Enter your email address"
+            required
+          >
+          <button type="submit" class="submit-btn">
+            Subscribe
+          </button>
+        </div>
+        <p class="newsletter-privacy">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Professional Newsletter Signup Styles */
+  .newsletter-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+  }
+  
+  .newsletter-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .newsletter-card {
+    background: linear-gradient(135deg, #0066ff 0%, #00c6ff 100%);
+    padding: 3rem;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .newsletter-content {
+    color: #ffffff;
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+  }
+  
+  .newsletter-description {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.95;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .email-input {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  .email-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  }
+  
+  .submit-btn {
+    padding: 0.875rem 2rem;
+    background: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .submit-btn:hover {
+    background: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .newsletter-privacy {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 968px) {
+    .newsletter-card {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2.5rem;
+      text-align: center;
+    }
+    
+    .newsletter-title {
+      font-size: 1.75rem;
+    }
+    
+    .form-wrapper {
+      flex-direction: column;
+    }
+    
+    .submit-btn {
+      width: 100%;
+    }
+  }
+</style>

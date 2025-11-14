@@ -1,0 +1,135 @@
+<!-- Primary CTA (Call-to-Action) Widget for SaaS Website -->
+<section class="cta-primary" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-content">
+      <h2 id="cta-heading" class="cta-heading">Ready to Get Started?</h2>
+      <p class="cta-text">
+        Join thousands of companies already using our platform to streamline their operations. 
+        Start your 14-day free trial today—no credit card required.
+      </p>
+      <div class="cta-actions">
+        <a href="/signup" class="btn btn-primary-cta">Start Free Trial</a>
+        <a href="/contact" class="btn btn-secondary-cta">Talk to Sales</a>
+      </div>
+      <p class="cta-note">
+        <svg class="checkmark-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        No credit card required • 14-day free trial • Cancel anytime
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Primary CTA Section Styles */
+  .cta-primary {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #0066ff 0%, #00c6ff 100%);
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .cta-primary .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-heading {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.2;
+  }
+  
+  .cta-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 0 0 2.5rem 0;
+    max-width: 700px;
+    opacity: 0.95;
+  }
+  
+  .cta-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .btn-primary-cta {
+    background: #ffffff;
+    color: #0066ff;
+  }
+  
+  .btn-primary-cta:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-secondary-cta {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  
+  .btn-secondary-cta:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .cta-note {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+  
+  .checkmark-icon {
+    flex-shrink: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cta-primary {
+      padding: 3.5rem 0;
+    }
+    
+    .cta-heading {
+      font-size: 2rem;
+    }
+    
+    .cta-text {
+      font-size: 1.125rem;
+    }
+    
+    .cta-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>

@@ -1,0 +1,185 @@
+<!-- Video Demo Section Widget for SaaS Website -->
+<section class="video-demo-section" aria-labelledby="demo-heading">
+  <div class="container">
+    <div class="demo-content">
+      <div class="demo-text">
+        <h2 id="demo-heading" class="demo-title">See It in Action</h2>
+        <p class="demo-description">
+          Watch how our platform can transform your workflow in just 2 minutes. 
+          Discover the features that make us the #1 choice for teams worldwide.
+        </p>
+        <ul class="demo-features">
+          <li class="feature-item">
+            <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M20 6L9 17L4 12" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Easy setup in minutes</span>
+          </li>
+          <li class="feature-item">
+            <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M20 6L9 17L4 12" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Intuitive interface</span>
+          </li>
+          <li class="feature-item">
+            <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M20 6L9 17L4 12" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Powerful automation</span>
+          </li>
+        </ul>
+        <a href="/signup" class="btn btn-primary">Start Free Trial</a>
+      </div>
+      
+      <div class="demo-video">
+        <div class="video-wrapper">
+          <button class="play-button" aria-label="Play video demo">
+            <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="36" cy="36" r="36" fill="white" opacity="0.95"/>
+              <path d="M30 24L48 36L30 48V24Z" fill="#0066ff"/>
+            </svg>
+          </button>
+          <img src="video-thumbnail.jpg" alt="Product demo video thumbnail" class="video-thumbnail">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Professional Video Demo Section Styles */
+  .video-demo-section {
+    padding: 5rem 0;
+    background: #f8f9fa;
+  }
+  
+  .video-demo-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .demo-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .demo-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+    color: #1a1a1a;
+  }
+  
+  .demo-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0 0 2rem 0;
+  }
+  
+  .demo-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  .check-icon {
+    flex-shrink: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: #0066ff;
+    color: #ffffff;
+  }
+  
+  .btn-primary:hover {
+    background: #0052cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
+  }
+  
+  .demo-video {
+    position: relative;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  }
+  
+  .video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .play-button svg {
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+  }
+  
+  @media (max-width: 968px) {
+    .video-demo-section {
+      padding: 3.5rem 0;
+    }
+    
+    .demo-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .demo-title {
+      font-size: 2rem;
+    }
+    
+    .demo-description {
+      font-size: 1rem;
+    }
+  }
+</style>

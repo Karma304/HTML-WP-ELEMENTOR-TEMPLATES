@@ -1,0 +1,190 @@
+<!-- Hero Section Widget for SaaS Website -->
+<section class="hero-section" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 id="hero-heading" class="hero-heading">
+          Transform Your Business with Our SaaS Solution
+        </h1>
+        <p class="hero-subheading">
+          Powerful tools and insights to streamline your workflow, boost productivity, 
+          and accelerate growth. Join thousands of teams already using our platform.
+        </p>
+        <div class="hero-actions">
+          <a href="/signup" class="btn btn-primary btn-large">Start Free Trial</a>
+          <a href="#demo" class="btn btn-secondary btn-large">Watch Demo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value">50K+</span>
+            <span class="stat-label">Active Users</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">99.9%</span>
+            <span class="stat-label">Uptime SLA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="hero-dashboard.png" alt="Dashboard screenshot showing analytics and insights" class="hero-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Professional Hero Section Styles */
+  .hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .hero-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .hero-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .hero-subheading {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 0 0 2rem 0;
+    opacity: 0.95;
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .btn-large {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+  }
+  
+  .btn-primary {
+    background: #ffffff;
+    color: #667eea;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+  
+  .hero-visual {
+    position: relative;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 968px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .hero-heading {
+      font-size: 2.5rem;
+    }
+    
+    .hero-subheading {
+      font-size: 1.125rem;
+    }
+    
+    .hero-actions {
+      flex-direction: column;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+    
+    .hero-stats {
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .hero-section {
+      padding: 3rem 0;
+    }
+    
+    .hero-heading {
+      font-size: 2rem;
+    }
+    
+    .hero-stats {
+      flex-wrap: wrap;
+    }
+  }
+</style>

@@ -1,0 +1,185 @@
+<!-- Stats/Metrics Section Widget for SaaS Website -->
+<section class="stats-section" aria-labelledby="stats-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="stats-heading" class="section-title">Trusted by Companies Worldwide</h2>
+      <p class="section-subtitle">
+        Join thousands of businesses that rely on our platform to drive growth and success.
+      </p>
+    </div>
+    
+    <div class="stats-grid">
+      <article class="stat-card">
+        <div class="stat-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="20" fill="#0066ff" opacity="0.1"/>
+            <path d="M24 14V24L30 27" stroke="#0066ff" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-value">50K+</div>
+          <div class="stat-label">Active Users</div>
+          <div class="stat-description">Growing community worldwide</div>
+        </div>
+      </article>
+      
+      <article class="stat-card">
+        <div class="stat-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="20" fill="#10b981" opacity="0.1"/>
+            <path d="M18 24L22 28L30 20" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-value">99.9%</div>
+          <div class="stat-label">Uptime SLA</div>
+          <div class="stat-description">Reliable and always available</div>
+        </div>
+      </article>
+      
+      <article class="stat-card">
+        <div class="stat-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="20" fill="#f59e0b" opacity="0.1"/>
+            <path d="M24 14L26.472 21.528L34 24L26.472 26.472L24 34L21.528 26.472L14 24L21.528 21.528L24 14Z" fill="#f59e0b"/>
+          </svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-value">1M+</div>
+          <div class="stat-label">Tasks Completed</div>
+          <div class="stat-description">Projects delivered successfully</div>
+        </div>
+      </article>
+      
+      <article class="stat-card">
+        <div class="stat-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="20" fill="#8b5cf6" opacity="0.1"/>
+            <path d="M16 24C16 19.5817 19.5817 16 24 16C28.4183 16 32 19.5817 32 24M32 24V28M32 24H28M24 24V32" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="stat-content">
+          <div class="stat-value">150+</div>
+          <div class="stat-label">Countries</div>
+          <div class="stat-description">Global presence and reach</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Professional Stats Section Styles */
+  .stats-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+  }
+  
+  .stats-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 1rem 0;
+    color: #ffffff;
+  }
+  
+  .section-subtitle {
+    font-size: 1.25rem;
+    margin: 0;
+    opacity: 0.95;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .stat-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-icon svg {
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  }
+  
+  .stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stat-value {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+  
+  .stat-label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  
+  .stat-description {
+    font-size: 0.875rem;
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 968px) {
+    .stats-section {
+      padding: 3.5rem 0;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.125rem;
+    }
+    
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stat-value {
+      font-size: 2.5rem;
+    }
+  }
+</style>
