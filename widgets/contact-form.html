@@ -1,116 +1,116 @@
-<!-- Contact Form Widget for SaaS Website -->
+<!-- Contact Form Widget für SaaS Website -->
 <section class="contact-form-section" aria-labelledby="contact-heading">
   <div class="container">
     <div class="form-wrapper">
       <div class="form-header">
-        <h2 id="contact-heading" class="form-title">Get in Touch</h2>
+        <h2 id="contact-heading" class="form-title">Kontaktieren Sie uns</h2>
         <p class="form-subtitle">
-          Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          Haben Sie Fragen? Wir freuen uns von Ihnen zu hören. Senden Sie uns eine Nachricht und wir antworten so schnell wie möglich.
         </p>
       </div>
       
       <form class="contact-form" action="/submit-contact" method="POST">
         <div class="form-row">
           <div class="form-group">
-            <label for="firstName" class="form-label">First Name *</label>
+            <label for="firstName" class="form-label">Vorname *</label>
             <input 
               type="text" 
               id="firstName" 
               name="firstName" 
               class="form-input" 
               required
-              placeholder="John"
+              placeholder="Max"
             >
           </div>
           
           <div class="form-group">
-            <label for="lastName" class="form-label">Last Name *</label>
+            <label for="lastName" class="form-label">Nachname *</label>
             <input 
               type="text" 
               id="lastName" 
               name="lastName" 
               class="form-input" 
               required
-              placeholder="Doe"
+              placeholder="Mustermann"
             >
           </div>
         </div>
         
         <div class="form-row">
           <div class="form-group">
-            <label for="email" class="form-label">Email Address *</label>
+            <label for="email" class="form-label">E-Mail-Adresse *</label>
             <input 
               type="email" 
               id="email" 
               name="email" 
               class="form-input" 
               required
-              placeholder="john@company.com"
+              placeholder="max@unternehmen.de"
             >
           </div>
           
           <div class="form-group">
-            <label for="phone" class="form-label">Phone Number</label>
+            <label for="phone" class="form-label">Telefonnummer</label>
             <input 
               type="tel" 
               id="phone" 
               name="phone" 
               class="form-input" 
-              placeholder="+1 (555) 000-0000"
+              placeholder="+49 (0) 123 456789"
             >
           </div>
         </div>
         
         <div class="form-group">
-          <label for="company" class="form-label">Company</label>
+          <label for="company" class="form-label">Unternehmen</label>
           <input 
             type="text" 
             id="company" 
             name="company" 
             class="form-input" 
-            placeholder="Your company name"
+            placeholder="Ihr Unternehmensname"
           >
         </div>
         
         <div class="form-group">
-          <label for="subject" class="form-label">Subject *</label>
+          <label for="subject" class="form-label">Betreff *</label>
           <select id="subject" name="subject" class="form-select" required>
-            <option value="">Select a subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="sales">Sales Question</option>
-            <option value="support">Technical Support</option>
-            <option value="partnership">Partnership Opportunity</option>
-            <option value="feedback">Product Feedback</option>
+            <option value="">Wählen Sie ein Thema</option>
+            <option value="general">Allgemeine Anfrage</option>
+            <option value="sales">Vertriebsanfrage</option>
+            <option value="support">Technischer Support</option>
+            <option value="partnership">Partnerschaftsmöglichkeit</option>
+            <option value="feedback">Produkt-Feedback</option>
           </select>
         </div>
         
         <div class="form-group">
-          <label for="message" class="form-label">Message *</label>
+          <label for="message" class="form-label">Nachricht *</label>
           <textarea 
             id="message" 
             name="message" 
             class="form-textarea" 
             rows="6" 
             required
-            placeholder="Tell us more about your inquiry..."
+            placeholder="Erzählen Sie uns mehr über Ihre Anfrage..."
           ></textarea>
         </div>
         
         <div class="form-group">
           <label class="checkbox-label">
             <input type="checkbox" name="newsletter" class="form-checkbox">
-            <span>I'd like to receive updates and product news via email</span>
+            <span>Ich möchte Updates und Produktneuigkeiten per E-Mail erhalten</span>
           </label>
         </div>
         
         <button type="submit" class="btn btn-primary btn-large">
-          Send Message
+          Nachricht senden
         </button>
         
         <p class="form-note">
-          By submitting this form, you agree to our 
-          <a href="/privacy">Privacy Policy</a> and 
-          <a href="/terms">Terms of Service</a>.
+          Durch das Absenden dieses Formulars stimmen Sie unserer 
+          <a href="/privacy">Datenschutzerklärung</a> und unseren 
+          <a href="/terms">Nutzungsbedingungen</a> zu.
         </p>
       </form>
     </div>
