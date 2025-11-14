@@ -1,0 +1,461 @@
+<!-- Product Detail Widget -->
+<section class="product-detail-section" aria-labelledby="product-title">
+  <div class="container">
+    <div class="product-layout">
+      <!-- Product Images -->
+      <div class="product-images">
+        <div class="main-image">
+          <img src="product-main.jpg" alt="Premium Wireless Headphones - Main view" id="main-product-image">
+          <span class="badge-new">New Arrival</span>
+        </div>
+        <div class="thumbnail-gallery">
+          <button class="thumbnail active">
+            <img src="product-thumb-1.jpg" alt="View 1">
+          </button>
+          <button class="thumbnail">
+            <img src="product-thumb-2.jpg" alt="View 2">
+          </button>
+          <button class="thumbnail">
+            <img src="product-thumb-3.jpg" alt="View 3">
+          </button>
+          <button class="thumbnail">
+            <img src="product-thumb-4.jpg" alt="View 4">
+          </button>
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <div class="product-details">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a> / <a href="/audio">Audio</a> / <span>Headphones</span>
+        </nav>
+
+        <h1 id="product-title" class="product-title">Premium Wireless Headphones</h1>
+        
+        <div class="product-meta">
+          <div class="rating-wrapper">
+            <span class="stars" aria-label="4.5 out of 5 stars">★★★★☆</span>
+            <span class="rating-score">4.5</span>
+            <a href="#reviews" class="review-count">(342 reviews)</a>
+          </div>
+          <span class="product-sku">SKU: WH-PRO-001</span>
+        </div>
+
+        <div class="price-section">
+          <span class="current-price">$149.99</span>
+          <span class="original-price">$199.99</span>
+          <span class="discount-badge">Save 25%</span>
+        </div>
+
+        <p class="product-description">
+          Experience premium sound quality with our flagship wireless headphones. 
+          Featuring active noise cancellation, 40-hour battery life, and premium 
+          comfort for all-day wear.
+        </p>
+
+        <div class="product-options">
+          <div class="option-group">
+            <label for="color-select">Color</label>
+            <div class="color-options">
+              <button class="color-btn active" style="background: #000;" aria-label="Black"></button>
+              <button class="color-btn" style="background: #999;" aria-label="Silver"></button>
+              <button class="color-btn" style="background: #fff; border: 1px solid #ddd;" aria-label="White"></button>
+              <button class="color-btn" style="background: #0066ff;" aria-label="Blue"></button>
+            </div>
+          </div>
+
+          <div class="option-group">
+            <label for="quantity">Quantity</label>
+            <div class="quantity-selector">
+              <button class="qty-btn" aria-label="Decrease">−</button>
+              <input type="number" id="quantity" value="1" min="1" max="10">
+              <button class="qty-btn" aria-label="Increase">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button class="btn-add-to-cart">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
+            </svg>
+            Add to Cart
+          </button>
+          <button class="btn-wishlist" aria-label="Add to wishlist">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="product-features">
+          <div class="feature-item">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+            </svg>
+            <span>Secure Payment</span>
+          </div>
+          <div class="feature-item">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+              <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/>
+            </svg>
+            <span>Free Shipping</span>
+          </div>
+          <div class="feature-item">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
+            </svg>
+            <span>Easy Returns</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Product Detail Styles */
+  .product-detail-section {
+    padding: 3rem 0;
+    background: white;
+  }
+
+  .product-detail-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  /* Product Images */
+  .product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f5f5f5;
+    aspect-ratio: 1;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .badge-new {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  .thumbnail-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .thumbnail {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #f5f5f5;
+    padding: 0;
+    transition: border-color 0.2s ease;
+    aspect-ratio: 1;
+  }
+
+  .thumbnail.active {
+    border-color: #0066ff;
+  }
+
+  .thumbnail:hover {
+    border-color: #0066ff;
+    opacity: 0.8;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Product Details */
+  .breadcrumb {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #666666;
+  }
+
+  .breadcrumb a {
+    color: #0066ff;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+
+  .product-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+  }
+
+  .product-meta {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stars {
+    color: #f59e0b;
+    font-size: 1.125rem;
+  }
+
+  .rating-score {
+    font-weight: 600;
+    color: #1a1a1a;
+  }
+
+  .review-count {
+    color: #0066ff;
+    text-decoration: none;
+  }
+
+  .review-count:hover {
+    text-decoration: underline;
+  }
+
+  .product-sku {
+    color: #666666;
+    font-size: 0.875rem;
+  }
+
+  .price-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .current-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0066ff;
+  }
+
+  .original-price {
+    font-size: 1.5rem;
+    color: #999999;
+    text-decoration: line-through;
+  }
+
+  .discount-badge {
+    background: #ef4444;
+    color: white;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  .product-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 2rem;
+  }
+
+  .product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .option-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1a1a1a;
+  }
+
+  .color-options {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .color-btn.active {
+    border-color: #0066ff;
+    transform: scale(1.1);
+  }
+
+  .color-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .quantity-selector .qty-btn {
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: background 0.2s ease;
+  }
+
+  .quantity-selector .qty-btn:hover {
+    background: #f5f5f5;
+  }
+
+  .quantity-selector input {
+    width: 60px;
+    text-align: center;
+    border: none;
+    border-left: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 40px;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-add-to-cart {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .btn-add-to-cart:hover {
+    background: #0052cc;
+  }
+
+  .btn-wishlist {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #666666;
+    transition: all 0.3s ease;
+  }
+
+  .btn-wishlist:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+  }
+
+  .product-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #666666;
+  }
+
+  .feature-item svg {
+    color: #10b981;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .product-layout {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .product-title {
+      font-size: 2rem;
+    }
+
+    .current-price {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .product-features {
+      grid-template-columns: 1fr;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+    }
+
+    .btn-wishlist {
+      width: 100%;
+    }
+  }
+</style>

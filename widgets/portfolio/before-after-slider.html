@@ -1,0 +1,146 @@
+<!-- Before/After Slider Widget -->
+<section class="before-after-section">
+  <div class="container">
+    <h2 class="section-heading">See the Transformation</h2>
+    <div class="before-after-slider">
+      <div class="before-after-wrapper">
+        <img src="before.jpg" alt="Before" class="image-before">
+        <img src="after.jpg" alt="After" class="image-after" id="afterImage">
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider-control" id="sliderControl">
+      <div class="slider-button" id="sliderButton">
+        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+          <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+        </svg>
+      </div>
+      <div class="labels">
+        <span class="label-before">Before</span>
+        <span class="label-after">After</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .before-after-section {
+    padding: 5rem 0;
+    background: #f8f9fa;
+  }
+  
+  .before-after-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+  }
+  
+  .before-after-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .before-after-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-before,
+  .image-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-after {
+    clip-path: inset(0 50% 0 0);
+  }
+  
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    opacity: 0;
+    cursor: ew-resize;
+    z-index: 2;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: #0066ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slider-button::before {
+    content: '';
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    background: #0066ff;
+  }
+  
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+  
+  .label-before {
+    color: #ef4444;
+  }
+  
+  .label-after {
+    color: #10b981;
+  }
+  
+  @media (max-width: 640px) {
+    .section-heading {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+<script>
+  const slider = document.getElementById('sliderControl');
+  const afterImage = document.getElementById('afterImage');
+  const sliderButton = document.getElementById('sliderButton');
+  
+  slider.addEventListener('input', function() {
+    const value = this.value;
+    afterImage.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+    sliderButton.style.left = value + '%';
+  });
+</script>

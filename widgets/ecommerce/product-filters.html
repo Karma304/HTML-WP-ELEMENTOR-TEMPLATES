@@ -1,0 +1,184 @@
+<!-- Product Filters Widget -->
+<aside class="product-filters" aria-label="Product filters">
+  <div class="filter-header">
+    <h3>Filters</h3>
+    <button class="filter-clear">Clear All</button>
+  </div>
+
+  <!-- Category Filter -->
+  <div class="filter-group">
+    <h4 class="filter-title">Category</h4>
+    <div class="filter-options">
+      <label class="filter-checkbox">
+        <input type="checkbox" name="category" value="electronics">
+        <span>Electronics (156)</span>
+      </label>
+      <label class="filter-checkbox">
+        <input type="checkbox" name="category" value="accessories">
+        <span>Accessories (89)</span>
+      </label>
+      <label class="filter-checkbox">
+        <input type="checkbox" name="category" value="wearables">
+        <span>Wearables (45)</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Price Range Filter -->
+  <div class="filter-group">
+    <h4 class="filter-title">Price Range</h4>
+    <div class="price-range">
+      <input type="range" min="0" max="1000" value="500" class="price-slider">
+      <div class="price-values">
+        <span>$0</span>
+        <span>$1000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand Filter -->
+  <div class="filter-group">
+    <h4 class="filter-title">Brand</h4>
+    <div class="filter-options">
+      <label class="filter-checkbox">
+        <input type="checkbox" name="brand" value="techpro">
+        <span>TechPro</span>
+      </label>
+      <label class="filter-checkbox">
+        <input type="checkbox" name="brand" value="smartwear">
+        <span>SmartWear</span>
+      </label>
+      <label class="filter-checkbox">
+        <input type="checkbox" name="brand" value="audimax">
+        <span>AudiMax</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Rating Filter -->
+  <div class="filter-group">
+    <h4 class="filter-title">Rating</h4>
+    <div class="filter-options">
+      <label class="filter-checkbox">
+        <input type="checkbox" name="rating" value="4">
+        <span>★★★★☆ & up</span>
+      </label>
+      <label class="filter-checkbox">
+        <input type="checkbox" name="rating" value="3">
+        <span>★★★☆☆ & up</span>
+      </label>
+    </div>
+  </div>
+
+  <button class="apply-filters-btn">Apply Filters</button>
+</aside>
+
+<style>
+  .product-filters {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .filter-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+  }
+
+  .filter-clear {
+    background: none;
+    border: none;
+    color: #0066ff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+
+  .filter-clear:hover {
+    text-decoration: underline;
+  }
+
+  .filter-group {
+    margin-bottom: 2rem;
+  }
+
+  .filter-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    color: #333333;
+  }
+
+  .filter-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .price-range {
+    padding: 0.5rem 0;
+  }
+
+  .price-slider {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+
+  .price-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #666666;
+  }
+
+  .apply-filters-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .apply-filters-btn:hover {
+    background: #0052cc;
+  }
+
+  @media (max-width: 968px) {
+    .product-filters {
+      position: sticky;
+      top: 1rem;
+    }
+  }
+</style>

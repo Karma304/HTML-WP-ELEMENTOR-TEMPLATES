@@ -1,0 +1,20 @@
+<!-- Pagination Widget -->
+<nav class="pagination" aria-label="Pagination">
+  <ul class="pagination-list">
+    <li><a href="#" class="pagination-btn prev">← Previous</a></li>
+    <li><a href="#" class="pagination-item">1</a></li>
+    <li><a href="#" class="pagination-item active">2</a></li>
+    <li><a href="#" class="pagination-item">3</a></li>
+    <li><span class="pagination-ellipsis">...</span></li>
+    <li><a href="#" class="pagination-item">10</a></li>
+    <li><a href="#" class="pagination-btn next">Next →</a></li>
+  </ul>
+</nav>
+<style>
+  .pagination { padding: 2rem 0; display: flex; justify-content: center; }
+  .pagination-list { display: flex; align-items: center; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
+  .pagination-item, .pagination-btn { padding: 0.75rem 1rem; border: 1px solid #e0e0e0; border-radius: 8px; text-decoration: none; color: #333333; font-weight: 600; }
+  .pagination-item:hover, .pagination-btn:hover { background: #f8f9fa; }
+  .pagination-item.active { background: #0066ff; color: white; border-color: #0066ff; }
+  .pagination-ellipsis { padding: 0.75rem; color: #666666; }
+</style>

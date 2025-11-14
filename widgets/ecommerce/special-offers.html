@@ -1,0 +1,42 @@
+<!-- Special Offers Banner Widget -->
+<section class="offers-section">
+  <div class="container">
+    <h2 class="section-heading">Today's Special Offers</h2>
+    <div class="offers-grid">
+      <div class="offer-card">
+        <span class="discount-badge">50% OFF</span>
+        <img src="offer-1.jpg" alt="Offer">
+        <h3>Summer Sale</h3>
+        <p>Up to 50% off on selected items</p>
+        <a href="#" class="shop-now-btn">Shop Now</a>
+      </div>
+      <div class="offer-card">
+        <span class="discount-badge">Buy 1 Get 1</span>
+        <img src="offer-2.jpg" alt="Offer">
+        <h3>BOGO Deal</h3>
+        <p>Buy one get one free on accessories</p>
+        <a href="#" class="shop-now-btn">Shop Now</a>
+      </div>
+      <div class="offer-card">
+        <span class="discount-badge">Free Shipping</span>
+        <img src="offer-3.jpg" alt="Offer">
+        <h3>Free Delivery</h3>
+        <p>On all orders above $50</p>
+        <a href="#" class="shop-now-btn">Shop Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .offers-section { padding: 5rem 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+  .offers-section .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  .section-heading { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 3rem; }
+  .offers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .offer-card { background: white; color: #333333; border-radius: 12px; overflow: hidden; text-align: center; position: relative; }
+  .discount-badge { position: absolute; top: 1rem; right: 1rem; background: #ef4444; color: white; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 700; font-size: 0.875rem; z-index: 1; }
+  .offer-card img { width: 100%; height: 200px; object-fit: cover; }
+  .offer-card h3 { font-size: 1.5rem; margin: 1.5rem 0 0.5rem; }
+  .offer-card p { color: #666666; padding: 0 1.5rem; margin-bottom: 1.5rem; }
+  .shop-now-btn { display: inline-block; padding: 0.875rem 2rem; background: #0066ff; color: white; text-decoration: none; border-radius: 8px; font-weight: 700; margin-bottom: 1.5rem; }
+  @media (max-width: 968px) { .offers-grid { grid-template-columns: 1fr; } }
+</style>

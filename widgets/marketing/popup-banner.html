@@ -1,0 +1,44 @@
+<!-- Popup Banner Widget -->
+<div class="popup-overlay" id="popupBanner">
+  <div class="popup-content">
+    <button class="popup-close">×</button>
+    <div class="popup-body">
+      <h2>Special Offer!</h2>
+      <p>Get 20% off your first purchase</p>
+      <form class="popup-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Get Discount</button>
+      </form>
+      <p class="popup-disclaimer">*Terms and conditions apply</p>
+    </div>
+  </div>
+</div>
+<style>
+  .popup-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.7); display: none; align-items: center; justify-content: center; z-index: 9999; }
+  .popup-overlay.active { display: flex; }
+  .popup-content { background: white; border-radius: 12px; max-width: 500px; width: 90%; position: relative; overflow: hidden; }
+  .popup-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 2rem; cursor: pointer; color: #666666; z-index: 1; }
+  .popup-body { padding: 3rem 2rem; text-align: center; }
+  .popup-body h2 { font-size: 2rem; margin-bottom: 1rem; color: #1a1a1a; }
+  .popup-body > p { font-size: 1.25rem; color: #666666; margin-bottom: 2rem; }
+  .popup-form { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+  .popup-form input { flex: 1; padding: 1rem; border: 1px solid #e0e0e0; border-radius: 8px; }
+  .popup-form button { padding: 1rem 2rem; background: #0066ff; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; white-space: nowrap; }
+  .popup-disclaimer { font-size: 0.75rem; color: #999999; }
+</style>
+<script>
+  // Show popup after 3 seconds
+  setTimeout(() => {
+    document.getElementById('popupBanner').classList.add('active');
+  }, 3000);
+  
+  document.querySelector('.popup-close').addEventListener('click', () => {
+    document.getElementById('popupBanner').classList.remove('active');
+  });
+  
+  document.getElementById('popupBanner').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) {
+      e.currentTarget.classList.remove('active');
+    }
+  });
+</script>
