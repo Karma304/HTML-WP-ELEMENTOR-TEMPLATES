@@ -1,0 +1,58 @@
+<!-- Feature Comparison Widget -->
+<section class="comparison-section">
+  <div class="container">
+    <h2 class="section-heading">Compare Plans</h2>
+    <div class="comparison-grid">
+      <div class="comparison-column">
+        <h3>Basic</h3>
+        <div class="price">$9<span>/mo</span></div>
+        <ul class="features">
+          <li>✓ 10 GB Storage</li>
+          <li>✓ Email Support</li>
+          <li>✗ API Access</li>
+          <li>✗ Custom Domain</li>
+        </ul>
+        <button class="select-btn">Select Plan</button>
+      </div>
+      <div class="comparison-column featured">
+        <span class="popular-badge">Most Popular</span>
+        <h3>Pro</h3>
+        <div class="price">$29<span>/mo</span></div>
+        <ul class="features">
+          <li>✓ 100 GB Storage</li>
+          <li>✓ Priority Support</li>
+          <li>✓ API Access</li>
+          <li>✓ Custom Domain</li>
+        </ul>
+        <button class="select-btn">Select Plan</button>
+      </div>
+      <div class="comparison-column">
+        <h3>Enterprise</h3>
+        <div class="price">$99<span>/mo</span></div>
+        <ul class="features">
+          <li>✓ Unlimited Storage</li>
+          <li>✓ Dedicated Support</li>
+          <li>✓ API Access</li>
+          <li>✓ Custom Everything</li>
+        </ul>
+        <button class="select-btn">Select Plan</button>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .comparison-section { padding: 5rem 0; background: #f8f9fa; }
+  .comparison-section .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  .section-heading { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 3rem; }
+  .comparison-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .comparison-column { background: white; padding: 2rem; border-radius: 12px; text-align: center; position: relative; }
+  .comparison-column.featured { border: 3px solid #0066ff; transform: scale(1.05); }
+  .popular-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #0066ff; color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+  .comparison-column h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .price { font-size: 3rem; font-weight: 700; color: #0066ff; margin-bottom: 2rem; }
+  .price span { font-size: 1.5rem; }
+  .features { list-style: none; padding: 0; margin-bottom: 2rem; text-align: left; }
+  .features li { padding: 0.75rem 0; border-bottom: 1px solid #e0e0e0; }
+  .select-btn { width: 100%; padding: 1rem; background: #0066ff; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; }
+  @media (max-width: 968px) { .comparison-grid { grid-template-columns: 1fr; } .comparison-column.featured { transform: scale(1); } }
+</style>

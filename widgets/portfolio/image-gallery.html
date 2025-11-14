@@ -1,0 +1,23 @@
+<!-- Image Gallery Widget -->
+<section class="gallery-section">
+  <div class="container">
+    <h2 class="section-heading">Image Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="img1.jpg" alt="Gallery image 1"></div>
+      <div class="gallery-item"><img src="img2.jpg" alt="Gallery image 2"></div>
+      <div class="gallery-item"><img src="img3.jpg" alt="Gallery image 3"></div>
+      <div class="gallery-item"><img src="img4.jpg" alt="Gallery image 4"></div>
+      <div class="gallery-item"><img src="img5.jpg" alt="Gallery image 5"></div>
+      <div class="gallery-item"><img src="img6.jpg" alt="Gallery image 6"></div>
+    </div>
+  </div>
+</section>
+<style>
+  .gallery-section { padding: 5rem 0; background: #1a1a1a; }
+  .gallery-section .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  .section-heading { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 3rem; color: white; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+  .gallery-item { aspect-ratio: 1; overflow: hidden; border-radius: 8px; cursor: pointer; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+  .gallery-item:hover img { transform: scale(1.1); }
+</style>

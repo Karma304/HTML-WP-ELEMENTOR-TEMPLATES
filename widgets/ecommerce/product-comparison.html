@@ -1,0 +1,122 @@
+<!-- Product Comparison Widget -->
+<section class="comparison-section">
+  <div class="container">
+    <h2 class="section-heading">Compare Products</h2>
+    
+    <div class="comparison-table-wrapper">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Basic</th>
+            <th>Pro</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Storage</td>
+            <td>10 GB</td>
+            <td>100 GB</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Users</td>
+            <td>1</td>
+            <td>10</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Support</td>
+            <td>Email</td>
+            <td>24/7 Chat</td>
+            <td>Dedicated Support</td>
+          </tr>
+          <tr>
+            <td>API Access</td>
+            <td>❌</td>
+            <td>✅</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Custom Integrations</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td><strong>$9/mo</strong></td>
+            <td><strong>$29/mo</strong></td>
+            <td><strong>$99/mo</strong></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button class="btn-select">Select</button></td>
+            <td><button class="btn-select">Select</button></td>
+            <td><button class="btn-select">Select</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+  .comparison-section {
+    padding: 5rem 0;
+    background: white;
+  }
+  .comparison-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+  }
+  .comparison-table-wrapper {
+    overflow-x: auto;
+  }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .comparison-table th {
+    background: #0066ff;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  .comparison-table td {
+    padding: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .comparison-table tr:last-child td {
+    border-bottom: none;
+  }
+  .comparison-table td:first-child {
+    font-weight: 600;
+    text-align: left;
+    background: #f8f9fa;
+  }
+  .btn-select {
+    padding: 0.75rem 2rem;
+    background: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+</style>

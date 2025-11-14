@@ -1,0 +1,52 @@
+<!-- Comment Section Widget -->
+<section class="comments-section">
+  <div class="container">
+    <h3>Comments (24)</h3>
+    <div class="comments-list">
+      <article class="comment">
+        <img src="avatar1.jpg" alt="User" class="comment-avatar">
+        <div class="comment-content">
+          <div class="comment-header">
+            <strong>John Smith</strong>
+            <span class="comment-date">2 days ago</span>
+          </div>
+          <p>Great article! Very informative and well-written.</p>
+          <button class="btn-reply">Reply</button>
+        </div>
+      </article>
+      <article class="comment reply">
+        <img src="avatar2.jpg" alt="User" class="comment-avatar">
+        <div class="comment-content">
+          <div class="comment-header">
+            <strong>Jane Doe</strong>
+            <span class="comment-date">1 day ago</span>
+          </div>
+          <p>Thanks for sharing this insight!</p>
+          <button class="btn-reply">Reply</button>
+        </div>
+      </article>
+    </div>
+    <form class="comment-form">
+      <h4>Leave a Comment</h4>
+      <textarea placeholder="Your comment..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  </div>
+</section>
+<style>
+  .comments-section { padding: 3rem 0; }
+  .comments-section .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+  .comments-section h3 { font-size: 1.75rem; margin-bottom: 2rem; }
+  .comments-list { display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 3rem; }
+  .comment { display: flex; gap: 1rem; }
+  .comment.reply { margin-left: 4rem; }
+  .comment-avatar { width: 48px; height: 48px; border-radius: 50%; }
+  .comment-content { flex: 1; }
+  .comment-header { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+  .comment-date { font-size: 0.875rem; color: #666666; }
+  .comment-content p { margin-bottom: 0.75rem; line-height: 1.6; }
+  .btn-reply { background: none; border: none; color: #0066ff; font-weight: 600; cursor: pointer; font-size: 0.875rem; }
+  .comment-form h4 { font-size: 1.25rem; margin-bottom: 1rem; }
+  .comment-form textarea { width: 100%; min-height: 120px; padding: 1rem; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1rem; font-family: inherit; }
+  .comment-form button { padding: 0.875rem 2rem; background: #0066ff; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; }
+</style>

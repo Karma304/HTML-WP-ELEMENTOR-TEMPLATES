@@ -1,0 +1,38 @@
+<!-- Related Posts Widget -->
+<aside class="related-posts">
+  <h3>Related Articles</h3>
+  <div class="related-list">
+    <article class="related-item">
+      <img src="related-1.jpg" alt="Article">
+      <div class="related-content">
+        <h4>Building Modern Web Apps</h4>
+        <span class="read-time">5 min read</span>
+      </div>
+    </article>
+    <article class="related-item">
+      <img src="related-2.jpg" alt="Article">
+      <div class="related-content">
+        <h4>CSS Grid Masterclass</h4>
+        <span class="read-time">8 min read</span>
+      </div>
+    </article>
+    <article class="related-item">
+      <img src="related-3.jpg" alt="Article">
+      <div class="related-content">
+        <h4>JavaScript ES2024 Features</h4>
+        <span class="read-time">6 min read</span>
+      </div>
+    </article>
+  </div>
+</aside>
+<style>
+  .related-posts { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+  .related-posts h3 { font-size: 1.25rem; margin-bottom: 1.5rem; }
+  .related-list { display: flex; flex-direction: column; gap: 1rem; }
+  .related-item { display: flex; gap: 1rem; padding: 1rem; border-radius: 8px; transition: background 0.2s ease; text-decoration: none; color: inherit; }
+  .related-item:hover { background: #f8f9fa; }
+  .related-item img { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+  .related-content { flex: 1; }
+  .related-content h4 { font-size: 1rem; margin-bottom: 0.5rem; }
+  .read-time { font-size: 0.875rem; color: #666666; }
+</style>

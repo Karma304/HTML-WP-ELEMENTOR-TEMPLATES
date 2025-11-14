@@ -1,0 +1,132 @@
+<!-- Countdown Timer Widget -->
+<section class="countdown-section">
+  <div class="container">
+    <h2 class="countdown-title">Limited Time Offer Ends In:</h2>
+    <div class="countdown-timer">
+      <div class="countdown-item">
+        <span class="countdown-value" id="days">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="hours">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="minutes">00</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <div class="countdown-separator">:</div>
+      <div class="countdown-item">
+        <span class="countdown-value" id="seconds">00</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+    <button class="cta-button">Claim Offer Now</button>
+  </div>
+</section>
+
+<style>
+  .countdown-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+  }
+  .countdown-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .countdown-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    min-width: 100px;
+  }
+  .countdown-value {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .countdown-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+  }
+  .countdown-separator {
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+  .cta-button {
+    padding: 1rem 3rem;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  @media (max-width: 640px) {
+    .countdown-timer {
+      gap: 0.5rem;
+    }
+    .countdown-item {
+      min-width: 70px;
+      padding: 1rem;
+    }
+    .countdown-value {
+      font-size: 2rem;
+    }
+    .countdown-separator {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
+<script>
+  // Set target date (change this to your desired date)
+  const targetDate = new Date('2024-12-31T23:59:59').getTime();
+  
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+    
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById('days').textContent = String(days).padStart(2, '0');
+    document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+    document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    
+    if (distance < 0) {
+      clearInterval(timerInterval);
+      document.querySelector('.countdown-title').textContent = 'Offer Ended';
+    }
+  }
+  
+  updateCountdown();
+  const timerInterval = setInterval(updateCountdown, 1000);
+</script>

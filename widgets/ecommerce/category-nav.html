@@ -1,0 +1,42 @@
+<!-- Category Navigation Widget -->
+<nav class="category-nav">
+  <div class="container">
+    <div class="category-grid">
+      <a href="/category/electronics" class="category-item">
+        <div class="category-icon">📱</div>
+        <span>Electronics</span>
+      </a>
+      <a href="/category/fashion" class="category-item">
+        <div class="category-icon">👗</div>
+        <span>Fashion</span>
+      </a>
+      <a href="/category/home" class="category-item">
+        <div class="category-icon">🏠</div>
+        <span>Home & Living</span>
+      </a>
+      <a href="/category/sports" class="category-item">
+        <div class="category-icon">⚽</div>
+        <span>Sports</span>
+      </a>
+      <a href="/category/beauty" class="category-item">
+        <div class="category-icon">💄</div>
+        <span>Beauty</span>
+      </a>
+      <a href="/category/books" class="category-item">
+        <div class="category-icon">📚</div>
+        <span>Books</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<style>
+  .category-nav { padding: 2rem 0; background: white; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+  .category-nav .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  .category-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; }
+  .category-item { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 1.5rem 1rem; background: #f8f9fa; border-radius: 12px; text-decoration: none; color: #333333; transition: all 0.3s ease; }
+  .category-item:hover { background: #0066ff; color: white; transform: translateY(-4px); }
+  .category-icon { font-size: 2.5rem; }
+  .category-item span { font-weight: 600; text-align: center; }
+  @media (max-width: 968px) { .category-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .category-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>

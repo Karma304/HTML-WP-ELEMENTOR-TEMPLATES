@@ -1,0 +1,41 @@
+<!-- Product Reviews Widget -->
+<section class="reviews-section">
+  <div class="container">
+    <h2>Customer Reviews</h2>
+    <div class="reviews-summary">
+      <div class="rating-overview">
+        <span class="rating-score">4.5</span>
+        <div class="stars">★★★★☆</div>
+        <p>Based on 328 reviews</p>
+      </div>
+    </div>
+    <div class="reviews-list">
+      <article class="review">
+        <div class="review-header">
+          <img src="user1.jpg" alt="User" class="user-avatar">
+          <div><strong>John Doe</strong><div class="stars">★★★★★</div></div>
+        </div>
+        <p>"Excellent product! Exceeded my expectations in every way."</p>
+      </article>
+      <article class="review">
+        <div class="review-header">
+          <img src="user2.jpg" alt="User" class="user-avatar">
+          <div><strong>Jane Smith</strong><div class="stars">★★★★☆</div></div>
+        </div>
+        <p>"Great quality, but delivery took a bit longer than expected."</p>
+      </article>
+    </div>
+  </div>
+</section>
+<style>
+  .reviews-section { padding: 3rem 0; }
+  .reviews-section .container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+  .reviews-summary { text-align: center; padding: 2rem; background: #f8f9fa; border-radius: 12px; margin-bottom: 2rem; }
+  .rating-score { font-size: 3rem; font-weight: 700; color: #0066ff; }
+  .stars { color: #f59e0b; font-size: 1.5rem; margin: 0.5rem 0; }
+  .reviews-list { display: flex; flex-direction: column; gap: 1.5rem; }
+  .review { padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; }
+  .review-header { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: center; }
+  .user-avatar { width: 48px; height: 48px; border-radius: 50%; }
+  .review .stars { font-size: 1rem; margin: 0; }
+</style>
