@@ -1,0 +1,129 @@
+<!-- Logo Showcase Widget for SaaS Website -->
+<section class="logo-showcase" aria-labelledby="clients-heading">
+  <div class="container">
+    <div class="section-header">
+      <h2 id="clients-heading" class="section-title">Trusted by Industry Leaders</h2>
+      <p class="section-subtitle">
+        Join the world's most innovative companies using our platform
+      </p>
+    </div>
+    
+    <div class="logo-grid">
+      <div class="logo-item">
+        <img src="logo-company-1.svg" alt="Company 1 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-2.svg" alt="Company 2 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-3.svg" alt="Company 3 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-4.svg" alt="Company 4 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-5.svg" alt="Company 5 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-6.svg" alt="Company 6 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-7.svg" alt="Company 7 Logo" class="client-logo">
+      </div>
+      <div class="logo-item">
+        <img src="logo-company-8.svg" alt="Company 8 Logo" class="client-logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Professional Logo Showcase Styles */
+  .logo-showcase {
+    padding: 4rem 0;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .logo-showcase .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: #1a1a1a;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #666666;
+    margin: 0;
+  }
+  
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem 2rem;
+    align-items: center;
+  }
+  
+  .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .client-logo {
+    max-width: 140px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+  }
+  
+  .logo-item:hover .client-logo {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 968px) {
+    .logo-showcase {
+      padding: 3rem 0;
+    }
+    
+    .logo-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem 1.5rem;
+    }
+    
+    .client-logo {
+      max-width: 120px;
+      max-height: 50px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+    
+    .logo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+</style>

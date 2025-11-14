@@ -1,0 +1,114 @@
+<!-- Secondary CTA (Call-to-Action) Widget for SaaS Website -->
+<section class="cta-secondary" aria-labelledby="cta-secondary-heading">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" rx="8" fill="#0066ff" opacity="0.1"/>
+          <path d="M24 14V34M14 24H34" stroke="#0066ff" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="cta-text-content">
+        <h2 id="cta-secondary-heading" class="cta-heading">Need Help Getting Started?</h2>
+        <p class="cta-description">
+          Our team of experts is here to help you succeed. Schedule a personalized demo 
+          and discover how our solution can transform your business.
+        </p>
+      </div>
+      <div class="cta-action">
+        <a href="/demo" class="btn btn-outline">Schedule a Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Secondary CTA Section Styles */
+  .cta-secondary {
+    padding: 4rem 0;
+    background: #f8f9fa;
+  }
+  
+  .cta-secondary .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .cta-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cta-icon {
+    flex-shrink: 0;
+  }
+  
+  .cta-text-content {
+    flex: 1;
+  }
+  
+  .cta-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem 0;
+    color: #1a1a1a;
+  }
+  
+  .cta-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #666666;
+  }
+  
+  .cta-action {
+    flex-shrink: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    color: #0066ff;
+    border: 2px solid #0066ff;
+  }
+  
+  .btn-outline:hover {
+    background: #0066ff;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+  }
+  
+  @media (max-width: 968px) {
+    .cta-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 2.5rem 2rem;
+    }
+    
+    .cta-heading {
+      font-size: 1.5rem;
+    }
+    
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
